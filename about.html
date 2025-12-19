@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我 - 个人博客</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="./index.html" class="logo">我的博客</a>
+
+      <ul class="nav-links">
+        <li><a href="./index.html" class="nav-link">首页</a></li>
+        <li><a href="./index.html#blog" class="nav-link">博客</a></li>
+        <li><a href="./about.html" class="nav-link">关于</a></li>
+        <li><a href="./contact.html" class="nav-link">联系</a></li>
+        <li class="theme-toggle">🌙</li>
+      </ul>
+
+      <div class="hamburger-menu">☰</div>
+    </div>
+  </nav>
+
+  <!-- 移动端菜单 -->
+  <div class="mobile-menu">
+    <div class="close-menu">✕</div>
+    <ul class="mobile-nav-links">
+      <li><a href="./index.html" class="mobile-nav-link">首页</a></li>
+      <li><a href="./index.html#blog" class="mobile-nav-link">博客</a></li>
+      <li><a href="./about.html" class="mobile-nav-link">关于</a></li>
+      <li><a href="./contact.html" class="mobile-nav-link">联系</a></li>
+      <li class="theme-toggle">🌙</li>
+    </ul>
+  </div>
+
+  <!-- 主要内容 -->
+  <main class="about-page container">
+    <section class="profile">
+      <div class="profile-avatar img-zoom">
+        <img data-src="./assets/images/avatar.png" alt="个人头像" class="lazyload">
+      </div>
+      <div class="profile-info">
+        <h1 class="profile-name">前端开发工程师</h1>
+        <p class="profile-bio">
+          专注于前端开发领域，热爱技术与分享。拥有多年原生JavaScript开发经验，
+          擅长HTML5/CSS3响应式设计、模块化开发和用户体验优化。
+          致力于打造高性能、可访问、用户友好的前端应用。
+        </p>
+        <p class="profile-bio">
+          技术理念：以用户为中心，注重代码质量和可维护性，持续学习新技术。
+        </p>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" class="social-link">
+            <img src="./assets/icons/github.svg" alt="GitHub" width="20" height="20">
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-link">
+            <img src="./assets/icons/linkedin.svg" alt="LinkedIn" width="20" height="20">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <h2 class="skills-title">我的技能</h2>
+      <div class="tag-cloud-container">
+        <div class="skill-tag tag-cloud">HTML5</div>
+        <div class="skill-tag tag-cloud" style="animation-delay: 0.5s;">CSS3</div>
+        <div class="skill-tag tag-cloud" style="animation-delay: 1s;">JavaScript ES6+</div>
+        <div class="skill-tag tag-cloud" style="animation-delay: 1.5s;">响应式设计</div>
+        <div class="skill-tag tag-cloud" style="animation-delay: 2s;">模块化开发</div>
+        <div class="skill-tag tag-cloud" style="animation-delay: 2.5s;">本地存储</div>
+        <div class="skill-tag tag-cloud" style="animation-delay: 3s;">性能优化</div>
+        <div class="skill-tag tag-cloud" style="animation-delay: 3.5s;">可访问性</div>
+        <div class="skill-tag tag-cloud" style="animation-delay: 4s;">Git</div>
+      </div>
+    </section>
+
+    <div class="weather-widget">
+      <div>加载天气数据中...</div>
+    </div>
+
+    <div class="visit-counter" style="text-align: center; margin-top: 2rem; color: var(--text-secondary);">
+      本站总访问量：0 次
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer style="background-color: var(--bg-secondary); padding: 2rem 0; text-align: center; margin-top: 4rem;">
+    <div class="container">
+      <p>© 2025 我的个人博客 | 纯原生前端开发</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

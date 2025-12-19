@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>博客详情 - 个人博客</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/blog-detail.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="./index.html" class="logo">我的博客</a>
+
+      <ul class="nav-links">
+        <li><a href="./index.html" class="nav-link">首页</a></li>
+        <li><a href="./index.html#blog" class="nav-link">博客</a></li>
+        <li><a href="./about.html" class="nav-link">关于</a></li>
+        <li><a href="./contact.html" class="nav-link">联系</a></li>
+        <li class="theme-toggle">🌙</li>
+      </ul>
+
+      <div class="hamburger-menu">☰</div>
+    </div>
+  </nav>
+
+  <!-- 移动端菜单 -->
+  <div class="mobile-menu">
+    <div class="close-menu">✕</div>
+    <ul class="mobile-nav-links">
+      <li><a href="./index.html" class="mobile-nav-link">首页</a></li>
+      <li><a href="./index.html#blog" class="mobile-nav-link">博客</a></li>
+      <li><a href="./about.html" class="mobile-nav-link">关于</a></li>
+      <li><a href="./contact.html" class="mobile-nav-link">联系</a></li>
+      <li class="theme-toggle">🌙</li>
+    </ul>
+  </div>
+
+  <!-- 主要内容 -->
+  <main class="blog-detail container">
+    <div class="blog-header">
+      <h1 class="blog-detail-title">加载中...</h1>
+      <div class="blog-detail-meta">
+        <span class="blog-detail-date">加载中...</span>
+        <span class="blog-detail-tags">加载中...</span>
+      </div>
+    </div>
+
+    <div class="blog-detail-content">
+      加载博客内容中...
+    </div>
+
+    <!-- 评论区 -->
+    <section class="comments-section">
+      <h2 class="comments-title">评论区</h2>
+
+      <form class="comment-form">
+        <div class="form-group">
+          <label for="comment-name" class="form-label">您的姓名</label>
+          <input type="text" id="comment-name" class="comment-input" placeholder="请输入您的姓名" required>
+        </div>
+
+        <div class="form-group">
+          <label for="comment-content" class="form-label">评论内容</label>
+          <textarea id="comment-content" class="comment-textarea" placeholder="请输入您的评论（至少5个字符）" required></textarea>
+          <div class="error-message"></div>
+        </div>
+
+        <button type="submit" class="btn">提交评论</button>
+      </form>
+
+      <div class="comment-list">
+        加载评论中...
+      </div>
+    </section>
+
+    <div class="visit-counter" style="text-align: center; margin-top: 2rem; color: var(--text-secondary);">
+      本站总访问量：0 次
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer style="background-color: var(--bg-secondary); padding: 2rem 0; text-align: center; margin-top: 4rem;">
+    <div class="container">
+      <p>© 2025 我的个人博客 | 纯原生前端开发</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

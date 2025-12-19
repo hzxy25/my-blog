@@ -1,0 +1,64 @@
+@import './reset.css';
+@import './variables.css';
+@import './animations.css';
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--accent);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: #1a365d;
+  transform: translateY(-2px);
+}
+
+.btn:disabled {
+  background-color: var(--text-secondary);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+/* 响应式断点 */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
